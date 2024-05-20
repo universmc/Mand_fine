@@ -2,7 +2,7 @@
   "models": [
     {
       "id": 1,
-      "name": "GPT-4 and GPT-4 Turbo",
+      "name": "GPT-4 and GPT-4 Turbo, GTP-4o",
       "apiString": ["gpt-4", "gpt-4-turbo-preview"],
       "developer": "OpenAI",
       "context": ["Text", "Image"],
