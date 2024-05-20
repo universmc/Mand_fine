@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/json/dicoEmojis.js">
+    <link rel="stylesheet" href="/src/sass/style.scss">
+    <title>Pitbot</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/src/img/logo.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+                Pitbot
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Caractéristiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Documentation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrousel -->
+    <div id="carrouselVideo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrouselVideo" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrouselVideo" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carrouselVideo" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video width="100%" height="auto" controls>
+                    <source src="/src/video/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video width="100%" height="auto" controls>
+                    <source src="/src/video/video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video width="100%" height="auto" controls>
+                    <source src="/src/video/video3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrouselVideo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrouselVideo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">A propos de nous</h5>
+                    <p>
+                        Pitbot est un bot Telegram qui vous permet de gérer votre salon de discussion de manière simple et
+                        intuitive. Il est développé par l'équipe de développement de univers-mc.cloud.
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Nous contacter</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-dark">Github : <code>${github}</code></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/PyArcade_bot" class="text-dark">Telegram : @PyArcade_bot</a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/universmc6" class="text-dark">Telegram : @universmc6</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/universmc/Telegram.git" class="text-dark">Telegram :
+                                telegram.git</a>
+                        </li>
+                        <li>
+                            <a href="telegram.git" class="text-dark">Telegram : -version</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="https://univers-mc.cloud/">univers-mc.cloud</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

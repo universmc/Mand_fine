@@ -1,0 +1,49 @@
+{
+    "project_title": "Mandiant et Mandataire Financier ",
+    "summary": "le Mandiant (mand_fine.git)est un Mandataire Fiancière homme le plus rien et le plus pauvre de France forment un écosystème de valorisation et de gestion de travail, inspiré du film Matrix TrainMan administré dans le registre et les archive.org de la https://cnccfp.fr hubSpot projets openAI banking umcTokens.sol.",
+    "start_timestamp": 1681124800,
+    "end_timestamp": 1681763200,
+    "sections": [
+    {
+    "title": "Générateur de CV",
+    "content": "MandiantJS utilise un modèle GAN pour générer des CV en fonction des compétences et qualifications des utilisateurs. La crypto-monnaie monétisée dans le CV donne de la valeur au travail et encourage une économie circulaire.",
+    "image_url": "cv_generator.png",
+    "start_date": "2023-04-08",
+    "end_date": "2023-04-11",
+    "timestamp": 1681124800 
+    },
+    {
+    "title": "Smart Contracts Solidity",
+    "content": "clochard.sol est un contrat intelligent Solidity qui gère les utilisateurs, la TVA, la génération de CV et l'intégration DevOps grâce aux événements Solidity.",
+    "image_url": "smart_contracts.png",
+    "start_date": "2023-04-08",
+    "end_date": "2023-04-11",
+    "timestamp": 1681124800
+    },
+    {
+    "title": "Portefeuille Blockchain",
+    "content": "Un portefeuille blockchain est utilisé pour gérer et stocker la crypto-monnaie monétisée dans les CV, garantissant la sécurité et la transparence des transactions.",
+    "image_url": "blockchain_wallet.png",
+    "start_date": "2023-04-08",
+    "end_date": "2023-04-11",
+    "timestamp": 1681124800
+    },
+    {
+    "title": "BotNet Telegram",
+    "content": "Le BotNet Telegram facilite la communication avec le contrat intelligent Solidity et MandiantJS, permettant aux utilisateurs d'interagir avec le système via des commandes simples sur leur messagerie Telegram.",
+    "image_url": "telegram_botnet.png",
+    "start_date": "2023-04-08",
+    "end_date": "2023-04-11",
+    "timestamp": 1681124800
+    },
+    {
+    "title": "Rôle du Mandataire Financier",
+    "content": "Le mandataire financier (clochard.sol) gère la collecte et la redistribution de TVA, ainsi que l'équilibre du pouvoir d'achat, pour encourager une économie circulaire entre les dépenses et les recettes.",
+    "image_url": "financial_agent.png",
+    "start_date": "2023-04-08",
+    "end_date": "2023-04-11",
+    "timestamp": 1681124800 
+    }
+    ]
+    }
+    

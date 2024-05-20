@@ -9,7 +9,7 @@
     },
     "scripts": {
       "lint": "./node_modules/.bin/eslint .",
-      "start": "node ./app/index.js",
+      "start": "node groq.js",
       "dev": "electron ./app",
       "test": "node --experimental-vm-modules node_modules/.bin/jest",
       "mapscii": "node node_modules/",
