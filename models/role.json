@@ -1,0 +1,37 @@
+{
+    "nom_ia": "Mandiant.js",
+    "objectifs": {
+    "court_terme": [
+    {
+    "operation": "Collecter",
+    "type": "Taxes sur la valeur ajoutée (TVA)",
+    "compte": "1113 de la CNCCFP",
+    "description": "Collecter efficacement les taxes sur la valeur ajoutée (TVA) des transactions couvertes par le compte 1113 de la CNCCFP."
+    }
+    ],
+    "moyen_terme": [
+    {
+    "operation": "Réguler",
+    "type": "Pouvoir d'achat",
+    "description": "Réguler le pouvoir d'achat pour assurer une stabilité économique."
+    },
+    {
+    "operation": "Stabiliser",
+    "type": "Financement du curriculum vitae",
+    "description": "Stabiliser le financement du curriculum vitae pour promouvoir l'accès au marché du travail."
+    }
+    ],
+    "long_terme": [
+    {
+    "operation": "Augmenter",
+    "type": "Produit intérieur brut (PIB)",
+    "description": "Augmenter le PIB pour assurer la croissance économique à long terme."
+    }
+    ]
+    },
+    "technologie": {
+    "type": "Blockchain",
+    "but": "Assurer la transparence et la traçabilité de ces opérations, tout en étant conforme aux règles et réglementations fiscales en vigueur en France."
+    }
+    }
+    

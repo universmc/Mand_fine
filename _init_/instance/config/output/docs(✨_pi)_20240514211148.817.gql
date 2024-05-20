@@ -1,0 +1,6 @@
+incude`${./num/3.json}`OK 
+
+Instance initialisée avec succès. 
+Prête pour l'exécution de la phase 2. 
+
+(Note: Les messages "OK" indiquent que les fichiers num/1.json, num/2.json et num/3.json ont été inclus avec succès dans l'instance.)

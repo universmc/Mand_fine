@@ -1,0 +1,15 @@
+Instance initialisée avec succès. 
+
+Voici les détails de l'instance:
+
+Nom: ${nom}
+Adresse IP: ${adresse\_ip}
+Système d'exploitation: ${systeme\_exploitation}
+Version: ${version}
+État: ${etat}
+
+Merci de noter que les informations ci-dessus sont des exemples et ne représentent pas les données réelles de votre instance. Veuillez vous référer à votre propre fichier de configuration pour obtenir les informations correctes.
+
+Pour plus d'informations sur l'utilisation de votre instance, veuillez consulter la documentation fournie avec votre package. Si vous avez des questions ou des préoccupations, n'hésitez pas à contacter notre équipe de support.
+
+Nous espérons que vous apprécierez d'utiliser notre produit.

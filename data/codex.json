@@ -1,0 +1,69 @@
+{
+    "introduction": {
+      "role": "Organization tool for software development projects",
+      "mission": "Analyze the Mandiant.js project structure and provide constructive advice on how to improve overall organization and efficiency."
+    },
+    "projectInfo": {
+      "folders": [
+        {
+          "name": "1-brainstorming",
+          "content": [{"name": "brainstorming.txt"}, {"name": "codex.js"}]
+        },
+        {
+          "name": "2-storyBoard",
+          "content": [{"name": "config.js"}]
+        },
+        {
+          "name": "3-database",
+          "content": []
+        },
+        {
+          "name": "4-models",
+          "content": [
+            {"name": "context.js"},
+            {"name": "mission.js"},
+            {"name": "work.js"}
+          ]
+        },
+        {
+          "name": "5-Frontend",
+          "content": []
+        },
+        {
+          "name": "6-backend",
+          "content": []
+        },
+        {
+          "name": "7-debug_Test",
+          "content": []
+        },
+        {
+          "name": "8-Doc_Val",
+          "content": []
+        },
+        {
+          "name": "9-Livr_contrib",
+          "content": []
+        }
+      ],
+      "filesInRootDir": [
+        {"name": "Makefile"},
+        {"name": "Presentation-readme.md"},
+        {"name": "menu.sh"}
+      ]
+    },
+    "steps": [
+      {
+        "step": "Examine the project structure and identify potential strengths and weaknesses.",
+        "adviceType": "analysis"
+      },
+      {
+        "step": "Advise ways to enhance collaboration and maintainability of the project.",
+        "adviceType": "improvement"
+      },
+      {
+        "step": "Suggest best practices for organization and version control to streamline workflow.",
+        "adviceType": "practices"
+      }
+    ]
+  }

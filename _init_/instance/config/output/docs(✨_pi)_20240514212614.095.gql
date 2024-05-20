@@ -1,0 +1,21 @@
+aide groq.cmd 
+
+La commande groq.cmd est utilisée pour interroger les données dans un entrepôt de données. Elle prend en charge plusieurs options pour personnaliser les résultats de la requête.
+
+Voici la syntaxe de base de la commande groq.cmd :
+
+groq.cmd [options] [requête]
+
+Les options suivantes sont prises en charge par la commande groq.cmd :
+
+* -h, --help : affiche l'aide pour la commande
+* -v, --version : affiche la version de la commande
+* -f, --format : spécifie le format de sortie des résultats (json, csv, tsv)
+* -o, --output : spécifie le nom du fichier de sortie pour les résultats
+* -s, --silent : exécute la commande en mode silencieux (aucune sortie à l'écran)
+
+Exemple :
+
+groq.cmd -f json '*\_users | count(*)' > users.json
+
+Cette commande compte le nombre d'utilisateurs dans l'entrepôt de données et enregistre le résultat dans un fichier JSON nommé users.json.

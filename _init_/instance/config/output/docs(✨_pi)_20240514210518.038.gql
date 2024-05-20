@@ -1,0 +1,35 @@
+Instance initialisée avec succès ! 
+
+Voici les détails de votre instance :
+
+Nom : Instance 1
+ID : 1
+État : En ligne
+Région : Région 1
+Type : Standard
+Date de création : 2023-03-22 12:00:00
+Date de dernière modification : 2023-03-22 12:00:00
+
+Caractéristiques :
+
+Mémoire : 2 Go
+Stockage : 10 Go
+Processeur : 1 cœur
+Système d'exploitation : Ubuntu 20.04 LTS
+
+Connexion SSH :
+
+Adresse IP : 192.168.1.1
+Port : 22
+Utilisateur : ubuntu
+Mot de passe : [mot de passe]
+
+Veuillez noter que le mot de passe ne sera affiché qu'une seule fois. Merci de le modifier dès votre première connexion.
+
+Pour vous connecter à votre instance via SSH, veuillez exécuter la commande suivante :
+
+ssh ubuntu@192.168.1.1 -p 22
+
+Si vous avez besoin d'aide, n'hésitez pas à contacter notre équipe de support.
+
+Merci d'avoir choisi notre service !
