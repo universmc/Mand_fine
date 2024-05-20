@@ -1,0 +1,86 @@
+{
+    "models": [
+      {
+        "id": 1,
+        "name": "GPT-4 and GPT-4 Turbo",
+        "apiString": ["gpt-4", "gpt-4-turbo-preview"],
+        "developer": "OpenAI",
+        "context": ["Text", "Image"],
+        "trainingData": "Up to December 2023",
+        "modelCardLink": "N/A"
+      },
+      {
+        "id": 2,
+        "name": "GPT-3.5 Turbo",
+        "apiString": ["gpt-3.5-turbo-0125", "gpt-3.5-turbo"],
+        "developer": "OpenAI",
+        "context": ["Text"],
+        "trainingData": "Up to September 2021",
+        "modelCardLink": "N/A"
+      },
+      {
+        "id": 3,
+        "name": "DALL·E",
+        "apiString": ["dall-e-3", "dall-e-2"],
+        "developer": "OpenAI",
+        "context": ["Image"],
+        "trainingData": "Non specified",
+        "modelCardLink": "N/A"
+      },
+      {
+        "id": 4,
+        "name": "TTS",
+        "apiString": ["tts-1", "tts-1-hd"],
+        "developer": "OpenAI",
+        "context": ["Audio"],
+        "trainingData": "Non specified",
+        "modelCardLink": "N/A"
+      },
+      {
+        "id": 5,
+        "name": "Whisper",
+        "apiString": "whisper-1",
+        "developer": "OpenAI",
+        "context": ["Audio"],
+        "trainingData": "Non specified",
+        "modelCardLink": "N/A"
+      },
+      {
+        "id": 6,
+        "name": "Embeddings",
+        "apiString": ["text-embedding-3-large", "text-embedding-3-small", "text-embedding-ada-002"],
+        "developer": "OpenAI",
+        "context": ["Text"],
+        "trainingData": "Non specified",
+        "modelCardLink": "N/A"
+      },
+      {
+        "id": 7,
+        "name": "Moderation",
+        "apiString": ["text-moderation-latest", "text-moderation-stable", "text-moderation-007"],
+        "developer": "OpenAI",
+        "context": ["Text"],
+        "trainingData": "Non specified",
+        "modelCardLink": "N/A"
+      },
+      {
+        "id": 8,
+        "name": "GPT base",
+        "apiString": ["babbage-002", "davinci-002"],
+        "developer": "OpenAI",
+        "context": ["Text"],
+        "trainingData": "Up to September 2021",
+        "modelCardLink": "N/A"
+      },
+      {
+        "id": 9,
+        "name": "Deprecated",
+        "apiString": "N/A",
+        "developer": "OpenAI",
+        "context": "N/A",
+        "trainingData": "N/A",
+        "modelCardLink": "N/A"
+      }
+    ]
+  }
+  

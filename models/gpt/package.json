@@ -1,0 +1,16 @@
+{
+  "name": "openai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npm data/test/gdev.js",
+    "style": "sass --watch src/sass/stylus.scss src/css/stylus.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
