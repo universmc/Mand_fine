@@ -84,17 +84,17 @@ console.log(Mand_fine)
         //    {role: "system", content: ProjectPlan },
             {role: "system", content: `${projectInfo}+${Mand_fine}` },
             {
-                role: "assistant",
-                content: "traduction de la docomentation en lang=Fr, readme.md"
-            },
-            {
                 role: "system",
-                content: "phase1_[run]{/dev const `Mand_fine`}"
+                content: "phase1_[run]{/devOps const init `Mand_fine`}"
             },
             {
                 role: "user",
-                content: "initialisation du rôle assistant nommé dans cette instance dont le code source est administré à cette adresse mise à jour régulièrement"
-            }
+                content: "initialisation du rôle assistant nommé Mand_fine -ia dans cette instance dont le code source est administré à cette adresse `https://github.com/universmc/Mand_fine.git` ssh https://univers-mc.cloud/Mand_fine/ mise à jour régulièrement"
+            },
+            {
+                role: "assistant",
+                content: "traduction de la docomentation en lang=Fr, readme.md"
+            },
         ],
         model: "mixtral-8x7b-32768",
         temperature: 0.4,
