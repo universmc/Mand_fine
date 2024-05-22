@@ -1,6 +1,6 @@
 {
     "project_title": "Mandiant et Mandataire Financier ",
-    "summary": "le Mandiant (mand_fine.git)est un Mandataire Fiancière homme le plus rien et le plus pauvre de France forment un écosystème de valorisation et de gestion de travail, inspiré du film Matrix TrainMan administré dans le registre et les archive.org de la https://cnccfp.fr hubSpot projets openAI banking umcTokens.sol.",
+    "summary": "le Mandiant (mand_fine.git)est un Mandataire Fiancière apprauvrie par la repression en France forment un écosystème de valorisation et de gestion de travail, inspiré du film Matrix TrainMan administré dans le registre et les archive.org de la https://cnccfp.fr hubSpot projets openAI banking umcTokens.sol.",
     "start_timestamp": 1681124800,
     "end_timestamp": 1681763200,
     "sections": [
@@ -14,7 +14,7 @@
     },
     {
     "title": "Smart Contracts Solidity",
-    "content": "clochard.sol est un contrat intelligent Solidity qui gère les utilisateurs, la TVA, la génération de CV et l'intégration DevOps grâce aux événements Solidity.",
+    "content": "tvaCollector.sol est un contrat intelligent Solidity qui gère les utilisateurs, la TVA, la génération de CV et l'intégration DevOps grâce aux événements Solidity.",
     "image_url": "smart_contracts.png",
     "start_date": "2023-04-08",
     "end_date": "2023-04-11",
@@ -38,7 +38,7 @@
     },
     {
     "title": "Rôle du Mandataire Financier",
-    "content": "Le mandataire financier (clochard.sol) gère la collecte et la redistribution de TVA, ainsi que l'équilibre du pouvoir d'achat, pour encourager une économie circulaire entre les dépenses et les recettes.",
+    "content": "Le mandataire financier (tvaCollector.sol+cvGenerator.js) gère la collecte et la redistribution de TVA, ainsi que l'équilibre du pouvoir d'achat, pour encourager une économie circulaire entre les dépenses et les recettes.",
     "image_url": "financial_agent.png",
     "start_date": "2023-04-08",
     "end_date": "2023-04-11",

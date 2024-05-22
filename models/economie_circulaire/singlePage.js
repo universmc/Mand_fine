@@ -34,7 +34,7 @@ async function main() {
         
             {
                 role: "system",
-                content: "Génère le code HTML d'une page d'index.html dans le [Context]"
+                content: "Génère le code HTML d'une page d'index.html dans ce context [...]"
             },
             {
                 role: "assistant",

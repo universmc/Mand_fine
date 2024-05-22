@@ -4,7 +4,7 @@ NODE_PORT = 5144
 NODE_APP = index.js
 
 menu :
-	@echo "Welcom To Quantum Univere."
+	@echo "Welcom To metalEconomical system."
 	@echo""
 	@echo"╔═════════════════════════════════════╗     ╔═════════════════════════════════════════════════════════════════════╗"
 	@echo"╠═══════════ ✨ Pi Console ═══════════╣     ║  [💫] [💬] [📚] [🌌] [✨] [⚡️] [💰] [🌴] [📱] [📡]              [🛰]║"
@@ -40,8 +40,8 @@ dev:
 all: $(MAGIC_TARGETS)
 
 # Magic COMPILER groq quantum
-codex:
-	@echo "Quantum Universe reveal a story to be told"
+init:
+	@echo "initialisation de l'instance grok-sdks"
 	@node init/welcom.js
 
 # Fabrication de la magie
@@ -75,7 +75,7 @@ file:
 	@touch build/files.sh
 
 script:
-	@echo "Unleashing quantum Magic Mafile with every script we shape"
+	@echo "Unleashing quantum Magic Makefile with every script we shape"
 	@bash src/sh/build.sh && 
 	@touch build/files.sh
 

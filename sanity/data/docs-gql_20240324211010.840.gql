@@ -1,0 +1,83 @@
+Guide d'utilisation de l'API Sanity
+============
+
+Ce guide vous présentera les étapes à suivre pour utiliser l'API Sanity pour gérer le contenu de votre site web ou application. Nous allons couvrir les bases de la configuration de votre projet, l'authentification, et l'utilisation des différentes fonctionnalités de l'API.
+
+Configuration du projet
+----------------------
+
+Pour commencer, vous devrez créer un compte et un projet sur le site web de Sanity. Une fois que vous avez créé un projet, vous serez dirigé vers la page de configuration de votre projet. Ici, vous pourrez configurer votre schéma, qui est la structure de données pour votre contenu.
+
+Authentification
+--------------
+
+Pour utiliser l'API Sanity, vous devrez vous authentifier en utilisant un jeton d'API. Vous pouvez créer un jeton d'API en allant dans les paramètres de votre projet et en cliquant sur l'option "Jetons d'API".
+
+Une fois que vous avez créé un jeton d'API, vous pouvez l'utiliser pour vous authentifier en ajoutant un en-tête "Authorization" à votre demande avec le jeton d'API comme valeur.
+
+Utilisation de l'API
+------------------
+
+### Création d'un document
+
+Pour créer un document, vous devrez faire une demande POST à l'endpoint `/documents` en incluant le document dans le corps de la demande.
+
+Exemple de demande:
+```json
+POST /documents HTTP/1.1
+Authorization: Bearer your_api_token
+Content-Type: application/json
+
+{
+  "_type": "post",
+  "title": "Mon premier article",
+  "slug": {
+    _type: "slug",
+    current: "mon-premier-article"
+  },
+  "body": "Ceci est le contenu de mon article."
+}
+```
+### Récupération d'un document
+
+Pour récupérer un document, vous devrez faire une demande GET à l'endpoint `/documents/{documentId}` en remplaçant `{documentId}` par l'ID du document que vous souhaitez récupérer.
+
+Exemple de demande:
+```bash
+GET /documents/post-slug-mon-premier-article HTTP/1.1
+Authorization: Bearer your_api_token
+```
+### Mise à jour d'un document
+
+Pour mettre à jour un document, vous devrez faire une demande PATCH à l'endpoint `/documents/{documentId}` en remplaçant `{documentId}` par l'ID du document que vous souhaitez mettre à jour. Vous devrez également inclure le document mis à jour dans le corps de la demande.
+
+Exemple de demande:
+```json
+PATCH /documents/post-slug-mon-premier-article HTTP/1.1
+Authorization: Bearer your_api_token
+Content-Type: application/json
+
+{
+  "body": "Ceci est la nouvelle version du contenu de mon article."
+}
+```
+### Suppression d'un document
+
+Pour supprimer un document, vous devrez faire une demande DELETE à l'endpoint `/documents/{documentId}` en remplaçant `{documentId}` par l'ID du document que vous souhaitez supprimer.
+
+Exemple de demande:
+```bash
+DELETE /documents/post-slug-mon-premier-article HTTP/1.1
+Authorization: Bearer your_api_token
+```
+Conclusion
+----------
+
+Dans ce guide, nous avons couvert les bases de l'utilisation de l'API Sanity pour gérer le contenu de votre site web ou application. Vous devriez maintenant être en mesure de configurer votre projet, vous authentifier, et utiliser les différentes fonctionnalités de l'API pour créer, lire, mettre à jour et supprimer des documents.
+
+[📚.sources]:[
+
+- [Sanity.io Documentation](https://www.sanity.io/docs)
+- [Sanity.io API Reference](https://www.sanity.io/docs/http)
+
+]

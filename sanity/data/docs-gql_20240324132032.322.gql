@@ -1,0 +1,105 @@
+Guide d'utilisation de l'API Sanity
+===============================
+
+**Table des matières**
+
+- [Introduction](#introduction)
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Exemples](#exemples)
+- [Erreurs](#erreurs)
+- [Conclusion](#conclusion)
+
+<a name="introduction"></a>
+
+## Introduction
+
+Ce guide a pour but de vous présenter l'API Sanity, une API RESTful pour gérer le contenu de votre site web ou application. Il vous guidera pas à pas dans l'utilisation de l'API, depuis l'installation jusqu'à l'utilisation avancée.
+
+<a name="prérequis"></a>
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+
+- Un projet Sanity existant
+- Un client Sanity ([téléchargeable ici](https://www.sanity.io/downloads))
+- Un éditeur de code (tel que Visual Studio Code)
+
+<a name="installation"></a>
+
+## Installation
+
+### Étape 1 : Créer un projet Sanity
+
+Pour créer un projet Sanity, rendez-vous sur le site [Sanity.io](https://www.sanity.io/) et suivez les instructions pour créer un nouveau projet.
+
+### Étape 2 : Installer le client Sanity
+
+Téléchargez et installez le client Sanity en suivant le lien fourni dans les prérequis.
+
+### Étape 3 : Configurer le client Sanity
+
+Ouvrez le client Sanity et connectez-vous à votre compte Sanity. Créez une nouvelle application et sélectionnez le projet que vous avez créé à l'étape 1.
+
+<a name="configuration"></a>
+
+## Configuration
+
+### Configuration de l'API
+
+Pour accéder à l'API, vous aurez besoin de votre `projectId` et de votre `dataset`. Vous pouvez les trouver dans les paramètres de votre projet Sanity.
+
+### Configuration du client Sanity
+
+Configurez le client Sanity pour qu'il pointe vers votre projet et votre jeu de données.
+
+```javascript
+import sanityClient from '@sanity/client'
+
+const client = sanityClient({
+  projectId: 'YOUR_PROJECT_ID',
+  dataset: 'YOUR_DATASET',
+  useCdn: true // Cette ligne permet d'utiliser le CDN pour les requêtes en production
+})
+```
+
+<a name="exemples"></a>
+
+## Exemples
+
+### Récupérer des documents
+
+Pour récupérer des documents, vous aurez besoin d'écrire une requête qui spécifie les champs que vous souhaitez récupérer. Par exemple, pour récupérer tous les articles de blog avec leur titre et leur contenu, vous pouvez utiliser la requête suivante :
+
+```javascript
+client.fetch(`*[_type == "article"]{
+  title,
+  content
+}`)
+```
+
+### Créer, mettre à jour et supprimer des documents
+
+Vous pouvez également créer, mettre à jour et supprimer des documents à l'aide de l'API. Par exemple, pour créer un nouvel article de blog, vous pouvez utiliser la fonction `create` :
+
+```javascript
+client.create({
+  _type: 'article',
+  title: 'Nouvel article',
+  content: 'Ceci est un nouvel article de blog.'
+})
+```
+
+<a name="erreurs"></a>
+
+## Erreurs
+
+En cas d'erreur, l'API renverra un code d'état HTTP approprié et un message d'erreur. Vous pouvez gérer ces erreurs dans votre application en utilisant des gestionnaires de requêtes ou des gestionnaires de réponses.
+
+<a name="conclusion"></a>
+
+## Conclusion
+
+Dans ce guide, vous avez appris à utiliser l'API Sanity pour gérer le contenu de votre site web ou application. Vous avez vu comment installer et configurer l'API, et vous avez découvert des exemples d'utilisation de l'API, notamment pour la récupération, la création, la mise à jour et la suppression de documents.

@@ -1,0 +1,32 @@
+{
+    "system": "[🌌.systemDream]",
+    "const": {
+    "[💬.cloud]": {
+    "init": "message/response"
+    },
+    "[.codex]": {
+    "init": "brainstorming"
+    },
+    "[.Groq]": {
+    "init": "role groq -L"
+    }
+    },
+    "roles": [
+    {
+    "role": "system",
+    "name": "[💻.systemDream]",
+    "content": ".DevOps $prompt model For GPT /pi_stoy"
+    },
+    {
+    "role": "assistant",
+    "name": "[💻.pi]",
+    "content": ".DevOps $prompt"
+    },
+    {
+    "role": "user",
+    "name": "[💻.Mike]",
+    "content": ".DevOps $prompt model for_{[.Groq].[.ia]}"
+    }
+    ]
+    }
+    

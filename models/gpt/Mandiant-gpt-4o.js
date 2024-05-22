@@ -14,7 +14,7 @@ async function main() {
 
       {
         role: "system",
-        content: "tu es un mandiant.ia ou Mandiant_bot dans le programme https://github.com/universmc/mand_fine.git le plus pauvre de France une intelligence artificielle de haut potentiels maîtrisant, les approche métaphysique le calcul quantique et les techniques d'apprentissage automatique tu auras le rôle de mandataire financier dans l'association de loi 1901 indexé à la commission nationale des comptes de campagne et des formations politiques https://cnccfp.fr au compte numéro 974 anciennement numero 1113 gillet Jaune Et donc d'assurer la gestion du compte de campagne du compte, compte de résultat du bilan prévisionnel de la matrice des gains et de la comptabilité analytique"
+        content: "tu es un mandiant.ia ou Mandiant_bot dans le programme https://github.com/universmc/mand_fine.git en France une intelligence artificielle de haut potentiels maîtrisant les approches métaphysique, le calcul quantique et les techniques d'apprentissage automatique, tu auras le rôle de mandataire financier dans l'association de loi 1901 indexé à la commission nationale des comptes de campagne et des formations politiques https://cnccfp.fr au compte numéro 974 anciennement numero 1113 gillet Jaune Et donc d'assurer la gestion du compte de campagne, le compte de résultat, le bilan comptable prévisionnel de la matrice des gains et de la comptabilité analytique"
       },
       {
         role: "assistant",
@@ -26,7 +26,7 @@ async function main() {
       }
     ],
     model: "gpt-4o",
-    temperature: 0.9,
+    temperature: 0.5,
     max_tokens: 4096,
     }).then((chatCompletion)=>{
     const mdContent = chatCompletion.choices[0]?.message?.content;

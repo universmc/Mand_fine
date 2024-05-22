@@ -1,0 +1,102 @@
+Guide d'utilisation de l'API Sanity
+==============================
+
+L'API Sanity vous permet de gérer le contenu de votre site Web de manière dynamique et programmatique. Avec Sanity, vous pouvez stocker et gérer du contenu structuré pour votre site Web ou votre application.
+
+Prérequis
+--------
+
+-   Un compte Sanity (gratuit)
+-   Un projet Sanity existant
+-   Un client API Sanity
+
+Étape 1: Créer un projet
+------------------------
+
+1. Connectez-vous à votre compte Sanity à <https://manage.sanity.io/>
+2. Cliquez sur le bouton "Créer un projet"
+3. Choisissez un nom et un type de projet
+4. Sélectionnez une structure de données par défaut ou créez-en une nouvelle
+5. Cliquez sur "Créer un projet"
+
+Étape 2: Créer un client API
+---------------------------
+
+1. Installez la bibliothèque client Sanity:
+```sh
+npm install @sanity/client
+```
+2. Créez un nouveau client API:
+```javascript
+import { createClient } from '@sanity/client'
+
+const client = createClient({
+  projectId: 'your-project-id',
+  dataset: 'your-dataset-name',
+  useCdn: true // set to `false` if you want to debug
+})
+```
+Étape 3: Interagir avec l'API
+-----------------------------
+
+### Récupérer des données
+
+Pour récupérer des données de votre projet Sanity, vous pouvez utiliser la fonction `client.fetch`:
+```javascript
+client.fetch(`*[_type == "post"] {
+  title,
+  slug,
+  publishedAt
+}`)
+.then((posts) => {
+  console.log(posts)
+})
+.catch(console.error)
+```
+### Créer des données
+
+Pour créer de nouvelles données dans votre projet Sanity, vous pouvez utiliser la fonction `client.create`:
+```javascript
+const post = {
+  title: 'Nouveau message',
+  slug: 'nouveau-message',
+  publishedAt: new Date(),
+  _type: 'post'
+}
+
+client.create(post)
+.then((post) => {
+  console.log(post)
+})
+.catch(console.error)
+```
+### Mettre à jour des données
+
+Pour mettre à jour des données dans votre projet Sanity, vous pouvez utiliser la fonction `client.patch`:
+```javascript
+const update = {
+  title: 'Message mis à jour'
+}
+
+client.patch('post-id')
+.set(update)
+.commit()
+.then((post) => {
+  console.log(post)
+})
+.catch(console.error)
+```
+### Supprimer des données
+
+Pour supprimer des données dans votre projet Sanity, vous pouvez utiliser la fonction `client.delete`:
+```javascript
+client.delete('post-id')
+.then(() => {
+  console.log('supprimé')
+})
+.catch(console.error)
+```
+Conclusion
+----------
+
+Dans ce guide, vous avez appris à utiliser l'API Sanity pour gérer le contenu de votre site Web. Vous avez appris à créer un client API, à interagir avec les données et à utiliser les méthodes d'API CRUD (créer, lire, mettre à jour et supprimer). Pour plus d'informations sur l'API Sanity, consultez la [documentation officielle](https://www.sanity.io/docs/data-store).
