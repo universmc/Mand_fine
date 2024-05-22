@@ -93,7 +93,7 @@ console.log(Mand_fine)
             },
             {
                 role: "assistant",
-                content: "traduction de la docomentation en lang=Fr, readme.md"
+                content: "traduction de la docomentation du `projetInfo` role du `Mand_fine` en lang=Fr, readme.md"
             },
         ],
         model: "mixtral-8x7b-32768",
